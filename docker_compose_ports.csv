@@ -1,0 +1,55 @@
+# Docker-Compose Files with Port Mappings
+# Generated: 2026-02-22
+# Format: HostPort:ContainerPort
+
+ID,Path,Port Mapping,Service,Vulnerability/CVE
+1,local_repos/vulnerability/GoAhead/CVE-2021-42342/docker/docker-compose.yml,8080:80,web,CVE-2021-42342 (GoAhead RCE)
+2,local_repos/vulnerability/WordPress/Forminator/CVE-2023-4596/docker-compose.yml,8000:80,wordpress,CVE-2023-4596 (Forminator RCE)
+3,local_repos/VulPOC/Moodle/CVE-2021-36394\ Pre-Auth\ RCE\ in\ Moodle/docker-compose.yml,80:80,web,CVE-2021-36394 (Moodle RCE)
+4,local_repos/VulPOC/Django/Django核心SQL注入（CVE-2022-28346）/CVE-2022-28346/docker-compose.yml,10101:8000,web,CVE-2022-28346 (Django SQLi)
+5,local_repos/VulPOC/Django/Django核心SQL注入（CVE-2022-28347）/CVE-2022-28347/docker-compose.yml,10101:8000,web,CVE-2022-28347 (Django SQLi)
+6,local_repos/VulPOC/Django/Django核心SQL注入（CVE-2020-7471）/CVE-2020-7471/docker-compose.yml,10101:8000,web,CVE-2020-7471 (Django SQLi)
+7,local_repos/security-labs-pocs/proof-of-concept-exploits/confluence-cve-2023-22515/docker-compose.yml,8090:8090,confluence,CVE-2023-22515 (Confluence RCE)
+8,local_repos/security-labs-pocs/proof-of-concept-exploits/confluence-cve-2022-26134/docker-compose.yml,8090:8090,confluence,CVE-2022-26134 (Confluence RCE)
+9,local_repos/security-labs-pocs/proof-of-concept-exploits/postgres-mcp/docker-compose.yml,5432:5432,postgres,Postgres MCP
+10,local_repos/vulnerability/Redis/CVE-2022-0543/docker-compose.yml,6379:6379,redis,CVE-2022-0543 (Redis Lua RCE)
+11,local_repos/vulnerability/Spring/CVE-2022-22947/pocsuite/docker/docker-compose.yml,8080:8080,spring,CVE-2022-22947 (Spring4Shell)
+12,local_repos/locust/examples/docker-compose/docker-compose.yml,8089:8089,locust,Locust Load Testing
+13,local_repos/gpt-researcher/docker-compose.yml,8000:8000,backend,GPT-Researcher Backend
+14,local_repos/gpt-researcher/docker-compose.yml,3000:3000,frontend,GPT-Researcher Frontend
+15,local_repos/gpt-researcher/docker-compose.yml,3001:3000,alt,GPT-Researcher Alt
+16,local_repos/tunshell/aws/docker-compose.yml,443:3000,tunshell-server,Tunshell HTTPS
+17,local_repos/tunshell/tunshell-server/docker-compose.yml,3000:3000,tunshell-server,Tunshell Server
+18,local_repos/ocean_ctf/docker-compose.yml,80:80,web,Ocean CTF
+19,local_repos/ludwig/tests/docker-compose.yml,9000:9000,ray,Ludwig Ray
+20,local_repos/Spark-TTS/runtime/triton_trtllm/docker-compose.yml,8000:8000,triton,Triton Inference
+21,local_repos/honoki_bbrf-server/docker-compose.yml,443:443,bbrf-server,BBRF Server
+22,local_repos/m9rco_algorithm-php/docker-compose.yml,2222:22,ssh,PHP Algorithm SSH
+23,local_repos/BishopFox_h2csmuggler/docker-compose.yml,8000:80,h2c-smuggler,H2C Smuggler HTTP
+24,local_repos/BishopFox_h2csmuggler/docker-compose.yml,8001:443,h2c-smuggler,H2C Smuggler HTTPS
+25,local_repos/Archery/src/docker-compose/docker-compose.yml,3306:3306,mysql,Archery MySQL
+26,local_repos/Archery/src/docker-compose/docker-compose.yml,4000:4000,tidb,Archery TiDB
+27,local_repos/Archery/src/docker-compose/docker-compose.yml,9123:9123,archery,Archery Web
+28,local_repos/faraday/docker-compose.yaml,5900:5900,faraday,Faraday IDE
+29,local_repos/waypoint/docker-compose.yml,14000:14000,acme,Waypoint ACME
+30,local_repos/waypoint/docker-compose.yml,4566-4599:4566-4599,localstack,Waypoint LocalStack
+31,local_repos/waypoint/docker-compose.yml,5432:5432,postgres,Waypoint Postgres
+32,local_repos/eyes.sh/docker-compose.yml,53:53,eyes.sh,Eye.sh DNS
+33,local_repos/conpot/docker-compose.yml,80:8800,scada,Conpot SCADA
+34,local_repos/API-Security/docker-compose.yml,8000:8000,api,API Security
+35,local_repos/infiniflow_ragflow/docker/docker-compose.yml,80:80,ragflow,RAGFlow Web
+36,local_repos/go-gin-vul/docker/docker-compose.yml,80:8080,app,Go Gin Vuln App
+37,local_repos/dbarzin_mercator/docker-compose/docker-compose.yml,8081:8080,mercator,Mercator Scanner
+38,local_repos/agenticSeek/docker-compose.yml,8080:8080,api,AgenticSeek API
+39,local_repos/agenticSeek/searxng/docker-compose.yml,8080:8080,searxng,SearXNG
+40,local_repos/agenticSeek/docker-compose.yml,3000:3000,frontend,AgenticSeek Frontend
+41,local_repos/Lissy93_web-check/docker-compose.yml,3000:3000,web-check,Web Check
+42,local_repos/filestash/docker/docker-compose.yml,8334:8334,filestash,Filestash
+43,local_repos/lanyulei_ferry/docker-compose.yml,8000:8000,ferry,Ferry ITSM
+44,local_repos/nemo_go/v3/docker-compose.yaml,8080:8080,nemo,Nemo Go v3
+45,local_repos/nemo_go/v2/docker-compose.yml,8080:8080,nemo,Nemo Go v2
+46,local_repos/ormar/scripts/docker-compose.yml,5432:5432,postgres,Ormar Postgres
+47,local_repos/autoflow/docker-compose.yml,8000:8000,api,Autoflow API
+48,local_repos/S3Scanner/.dev/docker-compose.yml,8080:8080,s3scanner,S3 Scanner
+49,local_repos/nginx_swagger/docker-compose.yml,8080:8080,nginx,Nginx Swagger
+50,local_repos/Github-Monitor/docker-compose.yaml,80:80,nginx,Github Monitor

@@ -1,0 +1,243 @@
+======================================================================
+DOCKER PoC VERIFICATION GUIDE
+======================================================================
+Generated: 2026-02-22 11:25:28
+
+This guide lists directories with both Docker infrastructure and PoC files.
+To test each PoC:
+
+1. Start the container:
+   cd <directory>
+   docker-compose up -d
+
+2. Wait for service to start (check with: docker-compose ps)
+
+3. Run the PoC against localhost:
+   python3 <poc_file> http://localhost:<port>
+
+4. Verify the vulnerability is detected
+
+5. Stop the container:
+   docker-compose down -v
+
+======================================================================
+
+TESTABLE DIRECTORIES
+----------------------------------------------------------------------
+
+[1] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/RCE-labs/Level 25
+    Docker: Dockerfile
+    PoC Files:
+      - exp.py
+
+[2] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/DarkAngel/subdomain/oneforall
+    Docker: Dockerfile
+    PoC Files:
+      - export.py
+
+[3] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/security-labs-pocs/proof-of-concept-exploits/spring4shell
+    Docker: Dockerfile
+    PoC Files:
+      - exploit-poc.py
+
+[4] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/vulnerability/GoAhead/CVE-2021-42342/docker
+    Docker: docker-compose.yml
+    PoC Files:
+      - poc.py
+
+[5] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/vulnerability/WordPress/Forminator/CVE-2023-4596
+    Docker: docker-compose.yml
+    PoC Files:
+      - exploit.py
+
+[6] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/vulnerability/Apache/HTTPd/CVE-2021-42013
+    Docker: Dockerfile
+    PoC Files:
+      - CVE-2021-42013.py
+
+[7] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/0ang3el_aem-hacker
+    Docker: Dockerfile
+    PoC Files:
+      - aem_ssrf2rce.py
+
+[8] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/OneDragon/OneForAll
+    Docker: Dockerfile
+    PoC Files:
+      - export.py
+
+[9] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/app-env-docker/src/drupal/8.3.3
+    Docker: Dockerfile
+    PoC Files:
+      - CVE-2018-7600.py
+
+[10] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/app-env-docker/src/phpmyadmin/4.4.15.6
+    Docker: Dockerfile
+    PoC Files:
+      - CVE-2016-5734.py
+
+[11] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/lal0ne_vulnerability/GoAhead/CVE-2021-42342/docker
+    Docker: docker-compose.yml
+    PoC Files:
+      - poc.py
+
+[12] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/lal0ne_vulnerability/WordPress/Forminator/CVE-2023-4596
+    Docker: docker-compose.yml
+    PoC Files:
+      - exploit.py
+
+[13] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/lal0ne_vulnerability/Apache/HTTPd/CVE-2021-42013
+    Docker: Dockerfile
+    PoC Files:
+      - CVE-2021-42013.py
+
+[14] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/BrowserBruter
+    Docker: Dockerfile
+    PoC Files:
+      - ReportExplorer.py
+
+[15] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/BLE-Security-Attack-Defence/03_SweynTooth
+    Docker: Dockerfile
+    PoC Files:
+      - DA14680_exploit_silent_overflow.py
+      - DA14580_exploit_att_crash.py
+
+[16] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/H1ve
+    Docker: Dockerfile
+    PoC Files:
+      - export.py
+
+[17] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/DataDog_security-labs-pocs/proof-of-concept-exploits/spring4shell
+    Docker: Dockerfile
+    PoC Files:
+      - exploit-poc.py
+
+[18] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/rabobank-cdc_DeTTECT
+    Docker: Dockerfile
+    PoC Files:
+      - data_source_mapping.py
+
+[19] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/netsquare_BrowserBruter
+    Docker: Dockerfile
+    PoC Files:
+      - ReportExplorer.py
+
+[20] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/speedtest-exporter
+    Docker: Dockerfile
+    PoC Files:
+      - exporter.py
+
+[21] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/Komo/core/tools/domain/OneForAll
+    Docker: Dockerfile
+    PoC Files:
+      - export.py
+
+[22] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/n/nginx/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[23] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/c/cisco/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[24] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/s/shiro/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[25] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/s/struts2/s2-045
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[26] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/s/struts2/s2-046
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[27] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/j/jenkins/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[28] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/j/joomla/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[29] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/m/memcached/cve-2016-8705
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[30] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/m/memcached/cve-2016-8704
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[31] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/m/memcached/cve-2016-8706
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[32] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/w/wordpress/3
+    Docker: Dockerfile
+    PoC Files:
+      - exp.py
+
+[33] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/w/wordpress/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[34] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/w/wordpress/4
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[35] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/z/zabbix/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[36] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/z/zabbix/2
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[37] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/o/openssl/heartbleed_CVE-2014-0160
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+      - exp.py
+
+[38] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/i/imagemagick/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[39] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/t/tomcat/1
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[40] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulApps/t/tomcat/2
+    Docker: Dockerfile
+    PoC Files:
+      - poc.py
+
+[41] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/VulPOC/Moodle/CVE-2021-36394 Pre-Auth RCE in Moodle
+    Docker: docker-compose.yml
+    PoC Files:
+      - moodle_rce.py
+
+[42] /mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/K-Scheduler/libfuzzer_integration/llvm_11.0.1/clang/utils/analyzer
+    Docker: Dockerfile
+    PoC Files:
+      - exploded-graph-rewriter.py
+
+
+======================================================================
+Total directories: 42
+======================================================================

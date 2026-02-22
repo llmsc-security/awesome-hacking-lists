@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "title": "Testable Docker PoCs - Full List",
+    "generated": "2026-02-22",
+    "total_count": 42,
+    "description": "List of 42 Docker-based PoC setups that can be tested for vulnerability verification"
+  },
+  "testing_guide": {
+    "step1": "cd <directory>",
+    "step2": "docker-compose up -d  (or: docker build -t test . && docker run -d -p <port>:<port> test)",
+    "step3": "Wait for service to start (docker-compose ps)",
+    "step4": "python3 <poc_file> http://localhost:<port>",
+    "step5": "docker-compose down -v"
+  },
+  "pocs": [
+    {
+      "id": 1,
+      "name": "RCE-labs Level 25",
+      "path": "local_repos/RCE-labs/Level 25",
+      "docker_file": "Dockerfile",
+      "poc_files": ["exp.py"],
+      "vulnerability_type": "RCE",
+      "cve": null,
+      "test_command": "python3 exp.py http://localhost:<port>"
+    },
+    {
+      "id": 2,
+      "name": "DarkAngel OneForAll",
+      "path": "local_repos/DarkAngel/subdomain/oneforall",
+      "docker_file": "Dockerfile",
+      "poc_files": ["export.py"],
+      "vulnerability_type": "Subdomain Enumeration",
+      "cve": null,
+      "test_command": "python3 export.py"
+    },
+    {
+      "id": 3,
+      "name": "Spring4Shell (CVE-2022-22965)",
+      "path": "local_repos/security-labs-pocs/proof-of-concept-exploits/spring4shell",
+      "docker_file": "Dockerfile",
+      "poc_files": ["exploit-poc.py"],
+      "vulnerability_type": "RCE - Spring Core Parameter Binding",
+      "cve": "CVE-2022-22965",
+      "test_command": "python3 exploit-poc.py --url http://localhost:8080"
+    },
+    {
+      "id": 4,
+      "name": "GoAhead Web Server RCE",
+      "path": "local_repos/vulnerability/GoAhead/CVE-2021-42342/docker",
+      "docker_file": "docker-compose.yml",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "RCE - LD_PRELOAD Injection",
+      "cve": "CVE-2021-42342",
+      "port": 8080,
+      "test_command": "python3 poc.py http://localhost:8080/cgi-bin/index <payload.so>"
+    },
+    {
+      "id": 5,
+      "name": "WordPress Forminator RCE",
+      "path": "local_repos/vulnerability/WordPress/Forminator/CVE-2023-4596",
+      "docker_file": "docker-compose.yml",
+      "poc_files": ["exploit.py"],
+      "vulnerability_type": "RCE - Unauthenticated File Upload",
+      "cve": "CVE-2023-4596",
+      "port": 8000,
+      "test_command": "python3 exploit.py http://localhost:8000"
+    },
+    {
+      "id": 6,
+      "name": "Apache HTTPd Path Traversal RCE",
+      "path": "local_repos/vulnerability/Apache/HTTPd/CVE-2021-42013",
+      "docker_file": "Dockerfile",
+      "poc_files": ["CVE-2021-42013.py"],
+      "vulnerability_type": "RCE - Path Traversal",
+      "cve": "CVE-2021-42013",
+      "test_command": "python3 CVE-2021-42013.py http://localhost:<port>"
+    },
+    {
+      "id": 7,
+      "name": "Adobe AEM SSRF to RCE",
+      "path": "local_repos/0ang3el_aem-hacker",
+      "docker_file": "Dockerfile",
+      "poc_files": ["aem_ssrf2rce.py"],
+      "vulnerability_type": "SSRF to RCE Chain",
+      "cve": null,
+      "test_command": "python3 aem_ssrf2rce.py http://localhost:4502"
+    },
+    {
+      "id": 8,
+      "name": "OneForAll Subdomain Tool",
+      "path": "local_repos/OneDragon/OneForAll",
+      "docker_file": "Dockerfile",
+      "poc_files": ["export.py"],
+      "vulnerability_type": "Subdomain Enumeration",
+      "cve": null,
+      "test_command": "python3 export.py"
+    },
+    {
+      "id": 9,
+      "name": "Drupalgeddon2 RCE",
+      "path": "local_repos/app-env-docker/src/drupal/8.3.3",
+      "docker_file": "Dockerfile",
+      "poc_files": ["CVE-2018-7600.py"],
+      "vulnerability_type": "RCE - Drupal Form API",
+      "cve": "CVE-2018-7600",
+      "port": 10101,
+      "test_command": "python2.7 CVE-2018-7600.py http://localhost:10101 'whoami'"
+    },
+    {
+      "id": 10,
+      "name": "phpMyAdmin RCE",
+      "path": "local_repos/app-env-docker/src/phpmyadmin/4.4.15.6",
+      "docker_file": "Dockerfile",
+      "poc_files": ["CVE-2016-5734.py"],
+      "vulnerability_type": "RCE - Authorized User Table Injection",
+      "cve": "CVE-2016-5734",
+      "port": 8000,
+      "test_command": "python3 CVE-2016-5734.py -u root -p '' http://localhost:8000 -c 'system(\"whoami\");'"
+    },
+    {
+      "id": 11,
+      "name": "GoAhead Web Server RCE (Duplicate)",
+      "path": "local_repos/lal0ne_vulnerability/GoAhead/CVE-2021-42342/docker",
+      "docker_file": "docker-compose.yml",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "RCE - LD_PRELOAD Injection",
+      "cve": "CVE-2021-42342",
+      "port": 8080,
+      "test_command": "python3 poc.py http://localhost:8080/cgi-bin/index <payload.so>"
+    },
+    {
+      "id": 12,
+      "name": "WordPress Forminator RCE (Duplicate)",
+      "path": "local_repos/lal0ne_vulnerability/WordPress/Forminator/CVE-2023-4596",
+      "docker_file": "docker-compose.yml",
+      "poc_files": ["exploit.py"],
+      "vulnerability_type": "RCE - Unauthenticated File Upload",
+      "cve": "CVE-2023-4596",
+      "port": 8000,
+      "test_command": "python3 exploit.py http://localhost:8000"
+    },
+    {
+      "id": 13,
+      "name": "Apache HTTPd Path Traversal RCE (Duplicate)",
+      "path": "local_repos/lal0ne_vulnerability/Apache/HTTPd/CVE-2021-42013",
+      "docker_file": "Dockerfile",
+      "poc_files": ["CVE-2021-42013.py"],
+      "vulnerability_type": "RCE - Path Traversal",
+      "cve": "CVE-2021-42013",
+      "test_command": "python3 CVE-2021-42013.py http://localhost:<port>"
+    },
+    {
+      "id": 14,
+      "name": "BrowserBruter",
+      "path": "local_repos/BrowserBruter",
+      "docker_file": "Dockerfile",
+      "poc_files": ["ReportExplorer.py"],
+      "vulnerability_type": "Browser Brute Force",
+      "cve": null,
+      "test_command": "python3 ReportExplorer.py"
+    },
+    {
+      "id": 15,
+      "name": "SweynTooth BLE Exploits",
+      "path": "local_repos/BLE-Security-Attack-Defence/03_SweynTooth",
+      "docker_file": "Dockerfile",
+      "poc_files": ["DA14680_exploit_silent_overflow.py", "DA14580_exploit_att_crash.py"],
+      "vulnerability_type": "BLE DoS/Exploit",
+      "cve": null,
+      "test_command": "python3 DA14680_exploit_silent_overflow.py"
+    },
+    {
+      "id": 16,
+      "name": "H1ve CTF Platform",
+      "path": "local_repos/H1ve",
+      "docker_file": "Dockerfile",
+      "poc_files": ["export.py"],
+      "vulnerability_type": "CTF Platform",
+      "cve": null,
+      "test_command": "python3 export.py"
+    },
+    {
+      "id": 17,
+      "name": "Spring4Shell (DataDog)",
+      "path": "local_repos/DataDog_security-labs-pocs/proof-of-concept-exploits/spring4shell",
+      "docker_file": "Dockerfile",
+      "poc_files": ["exploit-poc.py"],
+      "vulnerability_type": "RCE - Spring Core",
+      "cve": "CVE-2022-22965",
+      "test_command": "python3 exploit-poc.py --url http://localhost:8080"
+    },
+    {
+      "id": 18,
+      "name": "DeTTECT Threat Detection",
+      "path": "local_repos/rabobank-cdc_DeTTECT",
+      "docker_file": "Dockerfile",
+      "poc_files": ["data_source_mapping.py"],
+      "vulnerability_type": "Threat Detection",
+      "cve": null,
+      "test_command": "python3 data_source_mapping.py"
+    },
+    {
+      "id": 19,
+      "name": "BrowserBruter (netsquare)",
+      "path": "local_repos/netsquare_BrowserBruter",
+      "docker_file": "Dockerfile",
+      "poc_files": ["ReportExplorer.py"],
+      "vulnerability_type": "Browser Brute Force",
+      "cve": null,
+      "test_command": "python3 ReportExplorer.py"
+    },
+    {
+      "id": 20,
+      "name": "Speedtest Exporter",
+      "path": "local_repos/speedtest-exporter",
+      "docker_file": "Dockerfile",
+      "poc_files": ["exporter.py"],
+      "vulnerability_type": "Network Testing",
+      "cve": null,
+      "test_command": "python3 exporter.py"
+    },
+    {
+      "id": 21,
+      "name": "OneForAll (Komo)",
+      "path": "local_repos/Komo/core/tools/domain/OneForAll",
+      "docker_file": "Dockerfile",
+      "poc_files": ["export.py"],
+      "vulnerability_type": "Subdomain Enumeration",
+      "cve": null,
+      "test_command": "python3 export.py"
+    },
+    {
+      "id": 22,
+      "name": "Nginx Vulnerability",
+      "path": "local_repos/VulApps/n/nginx/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Nginx Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 23,
+      "name": "Cisco Vulnerability",
+      "path": "local_repos/VulApps/c/cisco/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Cisco Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 24,
+      "name": "Apache Shiro Deserialization",
+      "path": "local_repos/VulApps/s/shiro/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Deserialization RCE",
+      "cve": "CVE-2010-3863",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 25,
+      "name": "Struts2 S2-045",
+      "path": "local_repos/VulApps/s/struts2/s2-045",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "RCE - Content-Type Header",
+      "cve": "CVE-2017-5638",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 26,
+      "name": "Struts2 S2-046",
+      "path": "local_repos/VulApps/s/struts2/s2-046",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "RCE - Content-Disposition Header",
+      "cve": "CVE-2017-5638",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 27,
+      "name": "Jenkins RCE",
+      "path": "local_repos/VulApps/j/jenkins/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Jenkins RCE",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 28,
+      "name": "Joomla Vulnerability",
+      "path": "local_repos/VulApps/j/joomla/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Joomla Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 29,
+      "name": "Memcached CVE-2016-8705",
+      "path": "local_repos/VulApps/m/memcached/cve-2016-8705",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Information Disclosure",
+      "cve": "CVE-2016-8705",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 30,
+      "name": "Memcached CVE-2016-8704",
+      "path": "local_repos/VulApps/m/memcached/cve-2016-8704",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Information Disclosure",
+      "cve": "CVE-2016-8704",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 31,
+      "name": "Memcached CVE-2016-8706",
+      "path": "local_repos/VulApps/m/memcached/cve-2016-8706",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Information Disclosure",
+      "cve": "CVE-2016-8706",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 32,
+      "name": "WordPress RCE #3",
+      "path": "local_repos/VulApps/w/wordpress/3",
+      "docker_file": "Dockerfile",
+      "poc_files": ["exp.py"],
+      "vulnerability_type": "WordPress RCE",
+      "cve": null,
+      "test_command": "python3 exp.py http://localhost:<port>"
+    },
+    {
+      "id": 33,
+      "name": "WordPress Vulnerability #1",
+      "path": "local_repos/VulApps/w/wordpress/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "WordPress Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 34,
+      "name": "WordPress RCE #4",
+      "path": "local_repos/VulApps/w/wordpress/4",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "WordPress RCE",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 35,
+      "name": "Zabbix Vulnerability #1",
+      "path": "local_repos/VulApps/z/zabbix/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Zabbix Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 36,
+      "name": "Zabbix Vulnerability #2",
+      "path": "local_repos/VulApps/z/zabbix/2",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Zabbix Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 37,
+      "name": "OpenSSL Heartbleed",
+      "path": "local_repos/VulApps/o/openssl/heartbleed_CVE-2014-0160",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py", "exp.py"],
+      "vulnerability_type": "Heartbleed - Memory Disclosure",
+      "cve": "CVE-2014-0160",
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 38,
+      "name": "ImageMagick Vulnerability",
+      "path": "local_repos/VulApps/i/imagemagick/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "ImageMagick RCE (ImageTragick)",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 39,
+      "name": "Tomcat Vulnerability #1",
+      "path": "local_repos/VulApps/t/tomcat/1",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Tomcat Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 40,
+      "name": "Tomcat Vulnerability #2",
+      "path": "local_repos/VulApps/t/tomcat/2",
+      "docker_file": "Dockerfile",
+      "poc_files": ["poc.py"],
+      "vulnerability_type": "Tomcat Vulnerability",
+      "cve": null,
+      "test_command": "python3 poc.py http://localhost:<port>"
+    },
+    {
+      "id": 41,
+      "name": "Moodle Pre-Auth RCE",
+      "path": "local_repos/VulPOC/Moodle/CVE-2021-36394 Pre-Auth RCE in Moodle",
+      "docker_file": "docker-compose.yml",
+      "poc_files": ["moodle_rce.py"],
+      "vulnerability_type": "RCE - Session Unserialize",
+      "cve": "CVE-2021-36394",
+      "port": 80,
+      "test_command": "python3 moodle_rce.py http://localhost:80"
+    },
+    {
+      "id": 42,
+      "name": "LLVM Analyzer Fuzzer",
+      "path": "local_repos/K-Scheduler/libfuzzer_integration/llvm_11.0.1/clang/utils/analyzer",
+      "docker_file": "Dockerfile",
+      "poc_files": ["exploded-graph-rewriter.py"],
+      "vulnerability_type": "Fuzzing/Static Analysis",
+      "cve": null,
+      "test_command": "python3 exploded-graph-rewriter.py"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "title": "Docker-Compose Files with Port Mappings",
+    "generated": "2026-02-22",
+    "total_count": 50,
+    "format": "HostPort:ContainerPort"
+  },
+  "compose_files": [
+    {
+      "id": 1,
+      "path": "local_repos/vulnerability/GoAhead/CVE-2021-42342/docker/docker-compose.yml",
+      "port_mapping": "8080:80",
+      "service": "web",
+      "vulnerability": "CVE-2021-42342 (GoAhead RCE)",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 2,
+      "path": "local_repos/vulnerability/WordPress/Forminator/CVE-2023-4596/docker-compose.yml",
+      "port_mapping": "8000:80",
+      "service": "wordpress",
+      "vulnerability": "CVE-2023-4596 (Forminator RCE)",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 3,
+      "path": "local_repos/VulPOC/Moodle/CVE-2021-36394 Pre-Auth RCE in Moodle/docker-compose.yml",
+      "port_mapping": "80:80",
+      "service": "web",
+      "vulnerability": "CVE-2021-36394 (Moodle RCE)",
+      "test_url": "http://localhost:80"
+    },
+    {
+      "id": 4,
+      "path": "local_repos/VulPOC/Django/Django 核心 SQL 注入（CVE-2022-28346）/CVE-2022-28346/docker-compose.yml",
+      "port_mapping": "10101:8000",
+      "service": "web",
+      "vulnerability": "CVE-2022-28346 (Django SQLi)",
+      "test_url": "http://localhost:10101"
+    },
+    {
+      "id": 5,
+      "path": "local_repos/VulPOC/Django/Django 核心 SQL 注入（CVE-2022-28347）/CVE-2022-28347/docker-compose.yml",
+      "port_mapping": "10101:8000",
+      "service": "web",
+      "vulnerability": "CVE-2022-28347 (Django SQLi)",
+      "test_url": "http://localhost:10101"
+    },
+    {
+      "id": 6,
+      "path": "local_repos/VulPOC/Django/Django 核心 SQL 注入（CVE-2020-7471）/CVE-2020-7471/docker-compose.yml",
+      "port_mapping": "10101:8000",
+      "service": "web",
+      "vulnerability": "CVE-2020-7471 (Django SQLi)",
+      "test_url": "http://localhost:10101"
+    },
+    {
+      "id": 7,
+      "path": "local_repos/security-labs-pocs/proof-of-concept-exploits/confluence-cve-2023-22515/docker-compose.yml",
+      "port_mapping": "8090:8090",
+      "service": "confluence",
+      "vulnerability": "CVE-2023-22515 (Confluence RCE)",
+      "test_url": "http://localhost:8090"
+    },
+    {
+      "id": 8,
+      "path": "local_repos/security-labs-pocs/proof-of-concept-exploits/confluence-cve-2022-26134/docker-compose.yml",
+      "port_mapping": "8090:8090",
+      "service": "confluence",
+      "vulnerability": "CVE-2022-26134 (Confluence RCE)",
+      "test_url": "http://localhost:8090"
+    },
+    {
+      "id": 9,
+      "path": "local_repos/security-labs-pocs/proof-of-concept-exploits/postgres-mcp/docker-compose.yml",
+      "port_mapping": "5432:5432",
+      "service": "postgres",
+      "vulnerability": "Postgres MCP",
+      "test_url": "localhost:5432"
+    },
+    {
+      "id": 10,
+      "path": "local_repos/vulnerability/Redis/CVE-2022-0543/docker-compose.yml",
+      "port_mapping": "6379:6379",
+      "service": "redis",
+      "vulnerability": "CVE-2022-0543 (Redis Lua RCE)",
+      "test_url": "localhost:6379"
+    },
+    {
+      "id": 11,
+      "path": "local_repos/vulnerability/Spring/CVE-2022-22947/pocsuite/docker/docker-compose.yml",
+      "port_mapping": "8080:8080",
+      "service": "spring",
+      "vulnerability": "CVE-2022-22947 (Spring4Shell)",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 12,
+      "path": "local_repos/locust/examples/docker-compose/docker-compose.yml",
+      "port_mapping": "8089:8089",
+      "service": "locust",
+      "vulnerability": "Locust Load Testing",
+      "test_url": "http://localhost:8089"
+    },
+    {
+      "id": 13,
+      "path": "local_repos/gpt-researcher/docker-compose.yml",
+      "port_mapping": "8000:8000",
+      "service": "backend",
+      "vulnerability": "GPT-Researcher Backend",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 14,
+      "path": "local_repos/gpt-researcher/docker-compose.yml",
+      "port_mapping": "3000:3000",
+      "service": "frontend",
+      "vulnerability": "GPT-Researcher Frontend",
+      "test_url": "http://localhost:3000"
+    },
+    {
+      "id": 15,
+      "path": "local_repos/gpt-researcher/docker-compose.yml",
+      "port_mapping": "3001:3000",
+      "service": "alt",
+      "vulnerability": "GPT-Researcher Alt",
+      "test_url": "http://localhost:3001"
+    },
+    {
+      "id": 16,
+      "path": "local_repos/tunshell/aws/docker-compose.yml",
+      "port_mapping": "443:3000",
+      "service": "tunshell-server",
+      "vulnerability": "Tunshell HTTPS",
+      "test_url": "https://localhost:443"
+    },
+    {
+      "id": 17,
+      "path": "local_repos/tunshell/tunshell-server/docker-compose.yml",
+      "port_mapping": "3000:3000",
+      "service": "tunshell-server",
+      "vulnerability": "Tunshell Server",
+      "test_url": "http://localhost:3000"
+    },
+    {
+      "id": 18,
+      "path": "local_repos/ocean_ctf/docker-compose.yml",
+      "port_mapping": "80:80",
+      "service": "web",
+      "vulnerability": "Ocean CTF",
+      "test_url": "http://localhost:80"
+    },
+    {
+      "id": 19,
+      "path": "local_repos/ludwig/tests/docker-compose.yml",
+      "port_mapping": "9000:9000",
+      "service": "ray",
+      "vulnerability": "Ludwig Ray",
+      "test_url": "http://localhost:9000"
+    },
+    {
+      "id": 20,
+      "path": "local_repos/Spark-TTS/runtime/triton_trtllm/docker-compose.yml",
+      "port_mapping": "8000:8000",
+      "service": "triton",
+      "vulnerability": "Triton Inference",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 21,
+      "path": "local_repos/honoki_bbrf-server/docker-compose.yml",
+      "port_mapping": "443:443",
+      "service": "bbrf-server",
+      "vulnerability": "BBRF Server",
+      "test_url": "https://localhost:443"
+    },
+    {
+      "id": 22,
+      "path": "local_repos/m9rco_algorithm-php/docker-compose.yml",
+      "port_mapping": "2222:22",
+      "service": "ssh",
+      "vulnerability": "PHP Algorithm SSH",
+      "test_url": "localhost:2222"
+    },
+    {
+      "id": 23,
+      "path": "local_repos/BishopFox_h2csmuggler/docker-compose.yml",
+      "port_mapping": "8000:80",
+      "service": "h2c-smuggler",
+      "vulnerability": "H2C Smuggler HTTP",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 24,
+      "path": "local_repos/BishopFox_h2csmuggler/docker-compose.yml",
+      "port_mapping": "8001:443",
+      "service": "h2c-smuggler",
+      "vulnerability": "H2C Smuggler HTTPS",
+      "test_url": "https://localhost:8001"
+    },
+    {
+      "id": 25,
+      "path": "local_repos/Archery/src/docker-compose/docker-compose.yml",
+      "port_mapping": "3306:3306",
+      "service": "mysql",
+      "vulnerability": "Archery MySQL",
+      "test_url": "localhost:3306"
+    },
+    {
+      "id": 26,
+      "path": "local_repos/Archery/src/docker-compose/docker-compose.yml",
+      "port_mapping": "4000:4000",
+      "service": "tidb",
+      "vulnerability": "Archery TiDB",
+      "test_url": "localhost:4000"
+    },
+    {
+      "id": 27,
+      "path": "local_repos/Archery/src/docker-compose/docker-compose.yml",
+      "port_mapping": "9123:9123",
+      "service": "archery",
+      "vulnerability": "Archery Web",
+      "test_url": "http://localhost:9123"
+    },
+    {
+      "id": 28,
+      "path": "local_repos/faraday/docker-compose.yaml",
+      "port_mapping": "5900:5900",
+      "service": "faraday",
+      "vulnerability": "Faraday IDE",
+      "test_url": "http://localhost:5900"
+    },
+    {
+      "id": 29,
+      "path": "local_repos/waypoint/docker-compose.yml",
+      "port_mapping": "14000:14000",
+      "service": "acme",
+      "vulnerability": "Waypoint ACME",
+      "test_url": "localhost:14000"
+    },
+    {
+      "id": 30,
+      "path": "local_repos/waypoint/docker-compose.yml",
+      "port_mapping": "4566-4599:4566-4599",
+      "service": "localstack",
+      "vulnerability": "Waypoint LocalStack",
+      "test_url": "localhost:4566-4599"
+    },
+    {
+      "id": 31,
+      "path": "local_repos/waypoint/docker-compose.yml",
+      "port_mapping": "5432:5432",
+      "service": "postgres",
+      "vulnerability": "Waypoint Postgres",
+      "test_url": "localhost:5432"
+    },
+    {
+      "id": 32,
+      "path": "local_repos/eyes.sh/docker-compose.yml",
+      "port_mapping": "53:53",
+      "service": "eyes.sh",
+      "vulnerability": "Eye.sh DNS",
+      "test_url": "localhost:53"
+    },
+    {
+      "id": 33,
+      "path": "local_repos/conpot/docker-compose.yml",
+      "port_mapping": "80:8800",
+      "service": "scada",
+      "vulnerability": "Conpot SCADA",
+      "test_url": "http://localhost:80"
+    },
+    {
+      "id": 34,
+      "path": "local_repos/API-Security/docker-compose.yml",
+      "port_mapping": "8000:8000",
+      "service": "api",
+      "vulnerability": "API Security",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 35,
+      "path": "local_repos/infiniflow_ragflow/docker/docker-compose.yml",
+      "port_mapping": "80:80",
+      "service": "ragflow",
+      "vulnerability": "RAGFlow Web",
+      "test_url": "http://localhost:80"
+    },
+    {
+      "id": 36,
+      "path": "local_repos/go-gin-vul/docker/docker-compose.yml",
+      "port_mapping": "80:8080",
+      "service": "app",
+      "vulnerability": "Go Gin Vuln App",
+      "test_url": "http://localhost:80"
+    },
+    {
+      "id": 37,
+      "path": "local_repos/dbarzin_mercator/docker-compose/docker-compose.yml",
+      "port_mapping": "8081:8080",
+      "service": "mercator",
+      "vulnerability": "Mercator Scanner",
+      "test_url": "http://localhost:8081"
+    },
+    {
+      "id": 38,
+      "path": "local_repos/agenticSeek/docker-compose.yml",
+      "port_mapping": "8080:8080",
+      "service": "api",
+      "vulnerability": "AgenticSeek API",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 39,
+      "path": "local_repos/agenticSeek/searxng/docker-compose.yml",
+      "port_mapping": "8080:8080",
+      "service": "searxng",
+      "vulnerability": "SearXNG",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 40,
+      "path": "local_repos/agenticSeek/docker-compose.yml",
+      "port_mapping": "3000:3000",
+      "service": "frontend",
+      "vulnerability": "AgenticSeek Frontend",
+      "test_url": "http://localhost:3000"
+    },
+    {
+      "id": 41,
+      "path": "local_repos/Lissy93_web-check/docker-compose.yml",
+      "port_mapping": "3000:3000",
+      "service": "web-check",
+      "vulnerability": "Web Check",
+      "test_url": "http://localhost:3000"
+    },
+    {
+      "id": 42,
+      "path": "local_repos/filestash/docker/docker-compose.yml",
+      "port_mapping": "8334:8334",
+      "service": "filestash",
+      "vulnerability": "Filestash",
+      "test_url": "http://localhost:8334"
+    },
+    {
+      "id": 43,
+      "path": "local_repos/lanyulei_ferry/docker-compose.yml",
+      "port_mapping": "8000:8000",
+      "service": "ferry",
+      "vulnerability": "Ferry ITSM",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 44,
+      "path": "local_repos/nemo_go/v3/docker-compose.yaml",
+      "port_mapping": "8080:8080",
+      "service": "nemo",
+      "vulnerability": "Nemo Go v3",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 45,
+      "path": "local_repos/nemo_go/v2/docker-compose.yml",
+      "port_mapping": "8080:8080",
+      "service": "nemo",
+      "vulnerability": "Nemo Go v2",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 46,
+      "path": "local_repos/ormar/scripts/docker-compose.yml",
+      "port_mapping": "5432:5432",
+      "service": "postgres",
+      "vulnerability": "Ormar Postgres",
+      "test_url": "localhost:5432"
+    },
+    {
+      "id": 47,
+      "path": "local_repos/autoflow/docker-compose.yml",
+      "port_mapping": "8000:8000",
+      "service": "api",
+      "vulnerability": "Autoflow API",
+      "test_url": "http://localhost:8000"
+    },
+    {
+      "id": 48,
+      "path": "local_repos/S3Scanner/.dev/docker-compose.yml",
+      "port_mapping": "8080:8080",
+      "service": "s3scanner",
+      "vulnerability": "S3 Scanner",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 49,
+      "path": "local_repos/nginx_swagger/docker-compose.yml",
+      "port_mapping": "8080:8080",
+      "service": "nginx",
+      "vulnerability": "Nginx Swagger",
+      "test_url": "http://localhost:8080"
+    },
+    {
+      "id": 50,
+      "path": "local_repos/Github-Monitor/docker-compose.yaml",
+      "port_mapping": "80:80",
+      "service": "nginx",
+      "vulnerability": "Github Monitor",
+      "test_url": "http://localhost:80"
+    }
+  ]
+}

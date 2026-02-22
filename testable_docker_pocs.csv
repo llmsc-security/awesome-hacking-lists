@@ -1,0 +1,47 @@
+#Testable Docker PoCs - Full List
+#Generated: 2026-02-22
+#Total: 42 testable Docker + PoC setups
+
+ID,Path,Relative Path,Docker File,PoC Files,Vulnerability Type,CVE (if known)
+1,RCE-labs/Level 25,local_repos/RCE-labs/Level 25,Dockerfile,exp.py,RCE,
+2,DarkAngel/subdomain/oneforall,local_repos/DarkAngel/subdomain/oneforall,Dockerfile,export.py,Subdomain Enumeration,
+3,security-labs-pocs/proof-of-concept-exploits/spring4shell,local_repos/security-labs-pocs/proof-of-concept-exploits/spring4shell,Dockerfile,exploit-poc.py,RCE (Spring4Shell),CVE-2022-22965
+4,vulnerability/GoAhead/CVE-2021-42342/docker,local_repos/vulnerability/GoAhead/CVE-2021-42342/docker,docker-compose.yml,poc.py,RCE (LD_PRELOAD Injection),CVE-2021-42342
+5,vulnerability/WordPress/Forminator/CVE-2023-4596,local_repos/vulnerability/WordPress/Forminator/CVE-2023-4596,docker-compose.yml,exploit.py,RCE (File Upload),CVE-2023-4596
+6,vulnerability/Apache/HTTPd/CVE-2021-42013,local_repos/vulnerability/Apache/HTTPd/CVE-2021-42013,Dockerfile,CVE-2021-42013.py,RCE (Path Traversal),CVE-2021-42013
+7,0ang3el_aem-hacker,local_repos/0ang3el_aem-hacker,Dockerfile,aem_ssrf2rce.py,SSRF to RCE,
+8,OneDragon/OneForAll,local_repos/OneDragon/OneForAll,Dockerfile,export.py,Subdomain Enumeration,
+9,app-env-docker/src/drupal/8.3.3,local_repos/app-env-docker/src/drupal/8.3.3,Dockerfile,CVE-2018-7600.py,RCE (Drupalgeddon2),CVE-2018-7600
+10,app-env-docker/src/phpmyadmin/4.4.15.6,local_repos/app-env-docker/src/phpmyadmin/4.4.15.6,Dockerfile,CVE-2016-5734.py,RCE (Authorized),CVE-2016-5734
+11,lal0ne_vulnerability/GoAhead/CVE-2021-42342/docker,local_repos/lal0ne_vulnerability/GoAhead/CVE-2021-42342/docker,docker-compose.yml,poc.py,RCE (LD_PRELOAD Injection),CVE-2021-42342
+12,lal0ne_vulnerability/WordPress/Forminator/CVE-2023-4596,local_repos/lal0ne_vulnerability/WordPress/Forminator/CVE-2023-4596,docker-compose.yml,exploit.py,RCE (File Upload),CVE-2023-4596
+13,lal0ne_vulnerability/Apache/HTTPd/CVE-2021-42013,local_repos/lal0ne_vulnerability/Apache/HTTPd/CVE-2021-42013,Dockerfile,CVE-2021-42013.py,RCE (Path Traversal),CVE-2021-42013
+14,BrowserBruter,local_repos/BrowserBruter,Dockerfile,ReportExplorer.py,Brute Force,
+15,BLE-Security-Attack-Defence/03_SweynTooth,local_repos/BLE-Security-Attack-Defence/03_SweynTooth,Dockerfile,"DA14680_exploit_silent_overflow.py, DA14580_exploit_att_crash.py",BLE DoS/Exploit,
+16,H1ve,local_repos/H1ve,Dockerfile,export.py,CTF Platform,
+17,DataDog_security-labs-pocs/proof-of-concept-exploits/spring4shell,local_repos/DataDog_security-labs-pocs/proof-of-concept-exploits/spring4shell,Dockerfile,exploit-poc.py,RCE (Spring4Shell),CVE-2022-22965
+18,rabobank-cdc_DeTTECT,local_repos/rabobank-cdc_DeTTECT,Dockerfile,data_source_mapping.py,Threat Detection,
+19,netsquare_BrowserBruter,local_repos/netsquare_BrowserBruter,Dockerfile,ReportExplorer.py,Brute Force,
+20,speedtest-exporter,local_repos/speedtest-exporter,Dockerfile,exporter.py,Network Testing,
+21,Komo/core/tools/domain/OneForAll,local_repos/Komo/core/tools/domain/OneForAll,Dockerfile,export.py,Subdomain Enumeration,
+22,VulApps/n/nginx/1,local_repos/VulApps/n/nginx/1,Dockerfile,poc.py,Nginx Vulnerability,
+23,VulApps/c/cisco/1,local_repos/VulApps/c/cisco/1,Dockerfile,poc.py,Cisco Vulnerability,
+24,VulApps/s/shiro/1,local_repos/VulApps/s/shiro/1,Dockerfile,poc.py,Deserialization RCE (Shiro),CVE-2010-3863
+25,VulApps/s/struts2/s2-045,local_repos/VulApps/s/struts2/s2-045,Dockerfile,poc.py,RCE (Struts2),CVE-2017-5638
+26,VulApps/s/struts2/s2-046,local_repos/VulApps/s/struts2/s2-046,Dockerfile,poc.py,RCE (Struts2),CVE-2017-5638
+27,VulApps/j/jenkins/1,local_repos/VulApps/j/jenkins/1,Dockerfile,poc.py,Jenkins RCE,
+28,VulApps/j/joomla/1,local_repos/VulApps/j/joomla/1,Dockerfile,poc.py,Joomla Vulnerability,
+29,VulApps/m/memcached/cve-2016-8705,local_repos/VulApps/m/memcached/cve-2016-8705,Dockerfile,poc.py,Information Disclosure,CVE-2016-8705
+30,VulApps/m/memcached/cve-2016-8704,local_repos/VulApps/m/memcached/cve-2016-8704,Dockerfile,poc.py,Information Disclosure,CVE-2016-8704
+31,VulApps/m/memcached/cve-2016-8706,local_repos/VulApps/m/memcached/cve-2016-8706,Dockerfile,poc.py,Information Disclosure,CVE-2016-8706
+32,VulApps/w/wordpress/3,local_repos/VulApps/w/wordpress/3,Dockerfile,exp.py,WordPress RCE,
+33,VulApps/w/wordpress/1,local_repos/VulApps/w/wordpress/1,Dockerfile,poc.py,WordPress Vulnerability,
+34,VulApps/w/wordpress/4,local_repos/VulApps/w/wordpress/4,Dockerfile,poc.py,WordPress RCE,
+35,VulApps/z/zabbix/1,local_repos/VulApps/z/zabbix/1,Dockerfile,poc.py,Zabbix Vulnerability,
+36,VulApps/z/zabbix/2,local_repos/VulApps/z/zabbix/2,Dockerfile,poc.py,Zabbix Vulnerability,
+37,VulApps/o/openssl/heartbleed_CVE-2014-0160,local_repos/VulApps/o/openssl/heartbleed_CVE-2014-0160,Dockerfile,"poc.py, exp.py",Heartbleed,CVE-2014-0160
+38,VulApps/i/imagemagick/1,local_repos/VulApps/i/imagemagick/1,Dockerfile,poc.py,ImageMagick RCE,
+39,VulApps/t/tomcat/1,local_repos/VulApps/t/tomcat/1,Dockerfile,poc.py,Tomcat Vulnerability,
+40,VulApps/t/tomcat/2,local_repos/VulApps/t/tomcat/2,Dockerfile,poc.py,Tomcat Vulnerability,
+41,VulPOC/Moodle/CVE-2021-36394 Pre-Auth RCE in Moodle,local_repos/VulPOC/Moodle/CVE-2021-36394 Pre-Auth RCE in Moodle,docker-compose.yml,moodle_rce.py,RCE (Unserialize),CVE-2021-36394
+42,K-Scheduler/libfuzzer_integration/llvm_11.0.1/clang/utils/analyzer,local_repos/K-Scheduler/libfuzzer_integration/llvm_11.0.1/clang/utils/analyzer,Dockerfile,exploded-graph-rewriter.py,Fuzzing/Analysis,

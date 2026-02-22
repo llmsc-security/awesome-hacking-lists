@@ -1,0 +1,202 @@
+============================================================
+UNITTEST ISSUES REPORT
+============================================================
+Generated: 2026-02-22 11:22:57
+
+SUMMARY
+----------------------------------------
+Total files analyzed: 40
+Files with issues: 40
+Total issues: 101
+
+ISSUE TYPES
+----------------------------------------
+  deprecated_method: 66
+  missing_import: 11
+  missing_self: 11
+  path_issue: 9
+  async_issue: 4
+
+DETAILED ISSUES
+----------------------------------------
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/stacs/tests/test_model_ignore_list.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/stacs/tests/test_filter_ignore_list.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/stacs/tests/test_model_pack.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/stacs/tests/test_scanner_rule.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/stacs/tests/test_loader_filepath.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/malleum-inc_canari3/tests/test_framework.py:
+  Line 39: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 42: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_sequential_taskset.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_env.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_web.py:
+  Line 1: missing_import - Missing unittest import
+  Line 461: missing_self - Missing self parameter in test method
+  Line 499: missing_self - Missing self parameter in test method
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_tags.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_wait_time.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_locust_class.py:
+  Line 1: missing_import - Missing unittest import
+  Line 597: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 609: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 610: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 611: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 579: missing_self - Missing self parameter in test method
+  Line 585: missing_self - Missing self parameter in test method
+  Line 591: missing_self - Missing self parameter in test method
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_zmqrpc.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_http.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_main.py:
+  Line 1158: missing_self - Missing self parameter in test method
+  Line 1164: missing_self - Missing self parameter in test method
+  Line 1170: missing_self - Missing self parameter in test method
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_markov_taskset.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_load_locustfile.py:
+  Line 252: missing_self - Missing self parameter in test method
+  Line 261: missing_self - Missing self parameter in test method
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/locust/locust/test/test_fasthttp.py:
+  Line 142: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/tweepy_tweepy/tests/test_rate_limit_reset_time.py:
+  Line 108: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 131: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 198: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/tweepy_tweepy/tests/test_api.py:
+  Line 312: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 315: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 316: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 326: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 329: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 330: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/tweepy_tweepy/tests/test_resultset.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/tweepy_tweepy/tests/test_cursors.py:
+  Line 1: missing_import - Missing unittest import
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/gpt-researcher/tests/test_researcher_logging.py:
+  Line 0: path_issue - May have path resolution issues
+  Line 0: async_issue - Async tests may need pytest-asyncio
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/gpt-researcher/tests/test_security_fix.py:
+  Line 0: path_issue - May have path resolution issues
+  Line 0: async_issue - Async tests may need pytest-asyncio
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/gpt-researcher/tests/test_logging.py:
+  Line 29: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 54: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 0: async_issue - Async tests may need pytest-asyncio
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/gpt-researcher/tests/test_logging_output.py:
+  Line 0: async_issue - Async tests may need pytest-asyncio
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/gpt-researcher/tests/test_quick_search.py:
+  Line 25: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 43: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/gpt-researcher/tests/test_logs.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ocean_ctf/tests/test_docker.py:
+  Line 25: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 35: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/modules/test_tabnet_modules.py:
+  Line 142: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/modules/test_mlp_mixer_modules.py:
+  Line 5: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 10: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 20: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 27: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/models/test_training_determinism.py:
+  Line 9: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 36: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 37: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 38: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 39: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 41: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 42: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 51: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 52: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 53: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 54: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 56: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 57: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/marshmallow/test_marshmallow_misc.py:
+  Line 6: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 17: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 18: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 20: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/benchmarking/test_benchmarking.py:
+  Line 0: path_issue - May have path resolution issues
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/model_export/test_onnx_exporter.py:
+  Line 28: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 29: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 13: missing_self - Missing self parameter in test method
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/datasets/test_datasets.py:
+  Line 43: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/datasets/titanic/test_titanic_workflow.py:
+  Line 96: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/utils/test_numerical_test_utils.py:
+  Line 4: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 15: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 16: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 22: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 28: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 34: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 40: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/utils/test_llm_utils.py:
+  Line 315: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 339: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 345: deprecated_method - assert_ is deprecated, use assertTrue
+
+/mnt/nvme/wj_code/dl_scan/awesome-hacking-lists/local_repos/ludwig/tests/ludwig/utils/test_torch_utils.py:
+  Line 53: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 54: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 62: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 63: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 66: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 95: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 116: deprecated_method - assert_ is deprecated, use assertTrue
+  Line 131: deprecated_method - assert_ is deprecated, use assertTrue
